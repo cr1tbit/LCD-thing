@@ -382,7 +382,7 @@ L Device:R R12
 U 1 1 5CC60F50
 P 10800 3750
 F 0 "R12" H 10730 3704 50  0000 R CNN
-F 1 "R" H 10730 3795 50  0000 R CNN
+F 1 "10k" H 10730 3795 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10730 3750 50  0001 C CNN
 F 3 "~" H 10800 3750 50  0001 C CNN
 	1    10800 3750
@@ -1725,4 +1725,6 @@ Wire Wire Line
 	7200 2450 7200 1950
 Wire Wire Line
 	7400 1950 7400 2450
+Text Notes 9150 1150 0    50   ~ 0
+Rev. 1\n-Initial release\nRev.2\n- Selected proper LCD footprint\n- added dedicated 5V pin\n- removed R1/R2 solderbridges\n- addded pwr/status LEDs\n
 $EndSCHEMATC
