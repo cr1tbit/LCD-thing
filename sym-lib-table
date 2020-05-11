@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name VCOMLCD-rescue)(type Legacy)(uri ${KIPRJMOD}/VCOMLCD-rescue.lib)(options "")(descr ""))
+)
