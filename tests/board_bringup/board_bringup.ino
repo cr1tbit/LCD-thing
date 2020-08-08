@@ -41,6 +41,17 @@ byte frownie[8] = {
   0b10001
 };
 
+byte ci[8] = {
+  0b00010,
+  0b00100,
+  0b01110,
+  0b10000,
+  0b10000,
+  0b10001,
+  0b01110,
+  0b00000
+};
+
 void setup()
 {
   Serial.begin ( 115200 );
@@ -56,11 +67,14 @@ void setup()
 
   lcd.createChar (0, smiley);    // load character to the LCD
   lcd.createChar (2, frownie);   // load character to the LCD
-
+  lcd.createChar (3, ci);
+  
   lcd.home ();                   // go home
-  lcd.print("I actually do");  
+  lcd.print("Yebac Yasia");\
+  lcd.setCursor ( 4, 0 );
+  lcd.print (char(3));
   lcd.setCursor ( 0, 1 );        // go to the next line
-  lcd.print ("Work fine!");      
+  lcd.print ("");      
 }
 
 void loop()
